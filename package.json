@@ -8,7 +8,7 @@
         "dist": "webpack -p --config .storybook/webpack.dist.config.js",
         "ghpages": "storybook-to-ghpages",
         "lint": "eslint src",
-        "prepush": "npm run lint && npm run test",
+        "prepush": "npm run test",
         "storybook": "start-storybook -p 9001",
         "serve": "npm run storybook",
         "test": "mocha --require tests/mock-browser.js --compilers js:babel-core/register --recursive tests/*test.js"
