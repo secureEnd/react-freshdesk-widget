@@ -12,7 +12,7 @@
 
 ## Demo
 
-[Check it live :)](https://personare.github.io/react-freshdesk-widget)
+[Check it live :)](https://secureEnd.github.io/react-freshdesk-widget/)
 
 ## Installation
 
