@@ -1,6 +1,6 @@
-# react-freshdesk-widget [![Build Status](https://scrutinizer-ci.com/g/Personare/react-freshdesk-widget/badges/build.png?b=master&s=6b40b4cc955a743a38efda66164a0ee2659d945f)](https://scrutinizer-ci.com/g/Personare/react-freshdesk-widget/build-status/master)
+# react-freshdesk-widget
 
-> A component of React for use the Freshdesk Widget 
+> A component of React for use the Freshdesk Widget
 
 <br />
 
@@ -14,16 +14,16 @@
 
 [Check it live :)](https://personare.github.io/react-freshdesk-widget)
 
-## Installation 
+## Installation
 
 ```bash
-yarn add @personare/react-freshdesk-widget
+yarn add @secureend/react-freshdesk-widget
 ```
 
 ## Basic Usage
 
 ```js
-import FreshdeskWidget from '@personare/react-freshdesk-widget';
+import FreshdeskWidget from '@secureend/react-freshdesk-widget';
 
 ...
 render() {
@@ -41,7 +41,7 @@ render() {
 ## With custom button
 
 ```js
-import FreshdeskWidget from '@personare/react-freshdesk-widget';
+import FreshdeskWidget from '@secureend/react-freshdesk-widget';
 
 ...
 render() {
@@ -60,20 +60,22 @@ render() {
 
 ## Props
 
-* [`url`](#urlProperty) - *required*
-* [`type`](#typeProperty) - *one of ['pop-up', 'incorporated']*
-* [`formTitle`](#formTitleProperty) - *default: Help and support*
-* [`formHeight`](#formHeightProperty) - *default: 500px*
-* [`submitThanks`](#submitThanksProperty) - *default: Thank you, one of our representatives will respond to you soon! =)*
-* [`buttonType`](#buttonTypeProperty) - *only if the type property are equal 'pop-up'*
-* [`buttonText`](#buttonTextProperty) - *only if the type property are equal 'pop-up'*
-* [`buttonColor`](#buttonColorProperty) - *only if the type property are equal 'pop-up'*
-* [`buttonOffset`](#buttonOffsetProperty) - *only if the type property are equal 'pop-up'*
-* [`buttonPosition`](#buttonPositionProperty) - *only if the type property are equal 'pop-up'*
-* [`buttonBackgroundColor`](#buttonBackgroundColorProperty) - *only if the type property are equal 'pop-up'*
-* [`buttonBackgroundImage`](#buttonBackgroundImageProperty) - *only if the type property are equal 'pop-up'*
-* [`autofill`](#autofillProperty) - *allows autofilling fields*
-
+-   [`url`](#urlProperty) - _required_
+-   [`type`](#typeProperty) - _one of ['pop-up', 'incorporated']_
+-   [`formTitle`](#formTitleProperty) - _default: Help and support_
+-   [`formHeight`](#formHeightProperty) - _default: 500px_
+-   [`submitThanks`](#submitThanksProperty) - _default: Thank you, one of our representatives will respond to you soon! =)_
+-   [`buttonType`](#buttonTypeProperty) - _only if the type property are equal 'pop-up'_
+-   [`buttonText`](#buttonTextProperty) - _only if the type property are equal 'pop-up'_
+-   [`buttonColor`](#buttonColorProperty) - _only if the type property are equal 'pop-up'_
+-   [`buttonOffset`](#buttonOffsetProperty) - _only if the type property are equal 'pop-up'_
+-   [`buttonPosition`](#buttonPositionProperty) - _only if the type property are equal 'pop-up'_
+-   [`buttonBackgroundColor`](#buttonBackgroundColorProperty) - _only if the type property are equal 'pop-up'_
+-   [`buttonBackgroundImage`](#buttonBackgroundImageProperty) - _only if the type property are equal 'pop-up'_
+-   [`autofill`](#autofillProperty) - _allows autofilling fields_
+-   [`attachFile`](#attachFileProperty) - _default: yes_
+-   [`captcha`](#captchaProperty) - _default: no_
+-   [`searchArea`](#searchProperty) - _default: yes_
 
 <a name="urlProperty"></a>
 
@@ -101,10 +103,10 @@ The type of widget you want to insert the page.
 
 Currently you can perform through two ways:
 
-1. Through a pop-up where the user must click to display the widget.
-2. Incorporating direct in your HTML.
+1.  Through a pop-up where the user must click to display the widget.
+2.  Incorporating direct in your HTML.
 
-*default: incorporated*
+_default: incorporated_
 
 For example:
 
@@ -112,7 +114,7 @@ For example:
 ...
 render() {
     return (
-        <FreshdeskWidget 
+        <FreshdeskWidget
             url="https://support.freshdesk.com"
             type="pop-up"
         />
@@ -127,7 +129,7 @@ render() {
 
 What will be the title of the form.
 
-*default: Help and support*
+_default: Help and support_
 
 For example:
 
@@ -135,7 +137,7 @@ For example:
 ...
 render() {
     return (
-        <FreshdeskWidget 
+        <FreshdeskWidget
             url="https://support.freshdesk.com"
             formTitle="This is a custom title"
         />
@@ -150,7 +152,7 @@ render() {
 
 The height of the form.
 
-*default: 500px*
+_default: 500px_
 
 For example:
 
@@ -158,7 +160,7 @@ For example:
 ...
 render() {
     return (
-        <FreshdeskWidget 
+        <FreshdeskWidget
             url="https://support.freshdesk.com"
             formHeight="700px"
         />
@@ -173,7 +175,7 @@ render() {
 
 The message that appears after the user send feedback.
 
-*default: Thank you, one of our representatives will respond to you soon! =)*
+_default: Thank you, one of our representatives will respond to you soon! =)_
 
 For example:
 
@@ -181,7 +183,7 @@ For example:
 ...
 render() {
     return (
-        <FreshdeskWidget 
+        <FreshdeskWidget
             url="https://support.freshdesk.com"
             submitThanks="Thank you!!!"
         />
@@ -196,7 +198,7 @@ render() {
 
 The type of button when use pop-up.
 
-*default: text*
+_default: text_
 
 Note: When do you use an image type is necessary to pass `buttonBackgroundImage` property.
 
@@ -206,7 +208,7 @@ For example:
 ...
 render() {
     return (
-        <FreshdeskWidget 
+        <FreshdeskWidget
             url="https://support.freshdesk.com"
             type="pop-up"
             buttonType="image"
@@ -223,7 +225,7 @@ render() {
 
 The text of button.
 
-*default: Support*
+_default: Support_
 
 For example:
 
@@ -231,7 +233,7 @@ For example:
 ...
 render() {
     return (
-        <FreshdeskWidget 
+        <FreshdeskWidget
             url="https://support.freshdesk.com"
             type="pop-up"
             buttonType="text"
@@ -248,7 +250,7 @@ render() {
 
 The font color of button text.
 
-*default: white*
+_default: white_
 
 For example:
 
@@ -256,7 +258,7 @@ For example:
 ...
 render() {
     return (
-        <FreshdeskWidget 
+        <FreshdeskWidget
             url="https://support.freshdesk.com"
             type="pop-up"
             buttonType="text"
@@ -274,7 +276,7 @@ render() {
 
 The background-color of button.
 
-*default: #015453*
+_default: #015453_
 
 For example:
 
@@ -282,7 +284,7 @@ For example:
 ...
 render() {
     return (
-        <FreshdeskWidget 
+        <FreshdeskWidget
             url="https://support.freshdesk.com"
             type="pop-up"
             buttonType="text"
@@ -301,7 +303,7 @@ render() {
 
 The position of button in the window.
 
-*default: top*
+_default: top_
 
 For example:
 
@@ -309,7 +311,7 @@ For example:
 ...
 render() {
     return (
-        <FreshdeskWidget 
+        <FreshdeskWidget
             url="https://support.freshdesk.com"
             type="pop-up"
             buttonType="text"
@@ -329,7 +331,7 @@ render() {
 
 The offset of button.
 
-*default: 235px*
+_default: 235px_
 
 For example:
 
@@ -337,7 +339,7 @@ For example:
 ...
 render() {
     return (
-        <FreshdeskWidget 
+        <FreshdeskWidget
             url="https://support.freshdesk.com"
             type="pop-up"
             buttonType="text"
@@ -358,7 +360,7 @@ render() {
 
 When you use the `buttonType` with image, need to specify the URL and this property is for this.
 
-*default: 235px*
+_default: 235px_
 
 For example:
 
@@ -366,7 +368,7 @@ For example:
 ...
 render() {
     return (
-        <FreshdeskWidget 
+        <FreshdeskWidget
             url="https://support.freshdesk.com"
             type="pop-up"
             buttonType="image"
@@ -392,10 +394,79 @@ For example:
 ...
 render() {
     return (
-        <FreshdeskWidget 
+        <FreshdeskWidget
             url="https://support.freshdesk.com"
             type="pop-up"
             autofill={{ requester: user.email }}
+        />
+    );
+}
+...
+```
+
+<a name="attachFileProperty"></a>
+
+#### `attachFile` - (optional)
+
+Default attach a file option shown with the message area. If do not want to allow attach file set to 'no'
+
+_default: yes_
+
+For example:
+
+```js
+...
+render() {
+    return (
+        <FreshdeskWidget
+            url="https://support.freshdesk.com"
+            attachFile="no"
+        />
+    );
+}
+...
+```
+
+<a name="captchaProperty"></a>
+
+#### `captcha` - (optional)
+
+To enable captcha while input feedback, set captcha to 'yes'
+
+_default: no_
+
+For example:
+
+```js
+...
+render() {
+    return (
+        <FreshdeskWidget
+            url="https://support.freshdesk.com"
+            captcha="yes"
+        />
+    );
+}
+...
+```
+
+<a name="searchAreaProperty"></a>
+
+#### `searchArea` - (optional)
+
+By default searchArea is enabled. To disable search set to 'no'
+
+_default: yes_
+
+For example:
+
+```js
+...
+render() {
+    return (
+        <FreshdeskWidget
+            url="https://support.freshdesk.com"
+            searchArea="no"
         />
     );
 }
@@ -419,7 +490,3 @@ Just run:
 ```bash
 yarn test
 ```
-
-<br />
-
-*This scaffolding will be generated by* [@Personare/react-component-generator](https://github.com/Personare/react-component-generator)
